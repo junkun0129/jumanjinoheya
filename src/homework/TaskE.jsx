@@ -7,9 +7,9 @@ export function TaskE(){
 
     return(
         <>
-        <GlobalValue.Provider value = {100}>
+        
             <ComponentA></ComponentA>
-        </GlobalValue.Provider>
+      
         </>
     )
 }

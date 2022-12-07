@@ -11,14 +11,16 @@ export const reducer = (state = {count:0}, action)=>{
     switch(action.type){
       case "ADD_NUMBER":  
         return{
-            count: state.count++
+            count: state.count+=1
         }
   
       case "MINUS_NUMBER":
-      return{
-        count: state.count--
-    }
-    }
+        return{
+          count: state.count-=1
+        }
+        }
+
+        return state;
   }
   
 export const store = createStore(reducer, applyMiddleware(logger))
